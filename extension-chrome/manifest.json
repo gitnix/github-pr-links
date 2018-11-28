@@ -1,0 +1,12 @@
+{
+	"name": "Github PR Links",
+	"version": "1.0.0",
+	"description": "Adds links to repo/issue for merge branch and target branch on pull request page.",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": ["https://github.com/*/*/pull/*"],
+			"js": ["addLinks.js"]
+		}
+	]
+}
